@@ -2,10 +2,9 @@
 
 This project is a RESTful API built with Node.js and Express. The API allows you to upload a PDF file, extract the first 30 lines of text from it, and send an email with the extracted content to a specified email address.
 
-## Table of Contents
+**Table of Contents**
 
 - [RESTful API](#restful-api)
-  - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Endpoints](#endpoints)
@@ -91,7 +90,7 @@ curl -X POST http://localhost:3000/api/upload \
 ```sh
 {
   "success": false,
-  "message": "Error message"
+  "message": "An error has occurred processing your request"
 }
 ```
 
@@ -125,14 +124,17 @@ Use an App Password:
 restful_api/
 ├── src/
 │   ├── controllers/
+│   │   ├── index.js
 │   │   └── pdfController.js
 │   ├── routes/
 │   │   └── index.js
 │   ├── utils/
 │   │   ├── emailUtils.js
+│   │   ├── index.js
 │   │   └── pdfUtils.js
 │   └── app.js
 ├── .env
+├── .gitignore
 ├── README.md
 ├── package.json
 └── server.js

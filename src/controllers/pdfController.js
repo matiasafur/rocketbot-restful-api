@@ -1,6 +1,4 @@
-import utils from "../utils/utils.js";
-
-const { getTextFromPDF, sendEmail } = utils;
+import { getTextFromPDF, sendEmail } from "../utils/index.js";
 
 const uploadFile = async (req, res) => {
     try {
@@ -12,7 +10,6 @@ const uploadFile = async (req, res) => {
         }
 
         const extractedText = await getTextFromPDF(req.file.buffer);
-        console.log(extractedText);
         await sendEmail(req.body.email, extractedText);
 
         res.json({
@@ -28,6 +25,6 @@ const uploadFile = async (req, res) => {
     }
 };
 
-export default {
+export {
     uploadFile,
 };

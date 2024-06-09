@@ -1,11 +1,11 @@
 import express from "express";
 import multer from "multer";
-import pdfController from "../controllers/pdfController.js";
+import { uploadFile } from "../controllers/index.js";
 
 const router = express.Router();
-const upload = multer();
+const upload = multer(); // Helper for file uploads - https://www.npmjs.com/package/multer
 
-// Define a POST route at the /upload path
-router.post('/upload', upload.single('file'), pdfController.uploadFile);
+// POST route for upload a file
+router.post('/upload', upload.single('file'), uploadFile);
 
 export default router;
