@@ -28,7 +28,7 @@ This project is a RESTful API built with Node.js and Express. The API allows you
 2. Install the dependencies:
 
     ```sh
-    npm install express multer nodemailer pdf-parse-fork dotenv
+    npm install
     ```
 
 3. Create a `.env` file in the root directory and configure your environment variables as shown in the [Environment Variables](#environment-variables) section.
