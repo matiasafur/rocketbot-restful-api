@@ -121,7 +121,7 @@ Use an App Password:
 
 ## Project Structure
 ```bash
-restful_api/
+rocketbot-restful-api/
 ├── src/
 │   ├── controllers/
 │   │   ├── index.js
