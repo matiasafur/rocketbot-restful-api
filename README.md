@@ -21,8 +21,8 @@ This project is a RESTful API built with Node.js and Express. The API allows you
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/matiasafur/restful_api.git
-    cd restful_api
+    git clone https://github.com/matiasafur/rocketbot-restful-api.git
+    cd rocketbot-restful-api
     ```
 
 2. Install the dependencies:
